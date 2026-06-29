@@ -31,11 +31,11 @@ pyfftw = [
     { version="^0.13.0", markers="sys_platform != 'darwin'", source="pypi"},
     { git="https://github.com/tp5uiuc/pyFFTW.git", branch="macos_fix", markers="sys_platform == 'darwin'" },
 ]
-pystencils = [
-    { version="^1.0", markers="sys_platform != 'darwin'", source="pypi"},
-    { git="https://github.com/sy-cui/pystencils.git", branch="macos_fix", markers="sys_platform == 'darwin'" },
-
-]
+# pystencils = [
+#    { version="^1.0", markers="sys_platform != 'darwin'", source="pypi"},
+#    { git="https://github.com/sy-cui/pystencils.git", branch="macos_fix", markers="sys_platform == 'darwin'" },
+# ]
+pystencils = "^1.0"
 click = {version = "^8.1", optional = true, extras = ["examples"]}
 coomm = {version = ">=0.1.1", optional = true, extras = ["examples"]}
 magneto_pyelastica = {version = ">=0.0.1", optional = true, extras = ["examples"]}

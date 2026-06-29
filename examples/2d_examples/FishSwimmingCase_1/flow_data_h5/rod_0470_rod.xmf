@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf xmlns:xi="http://www.w3.org/2003/XInclude" Version="2.2">
+    <Domain>
+        <Grid GridType="Uniform">
+            <Time Value="4.7062568300455565"/>
+            <Topology TopologyType="Polyline">
+                <DataItem DataType="Int" Dimensions="1
+                91" Format="HDF" Precision="8">
+                    rod_0470.h5:/Lagrangian/rod/Connection
+                </DataItem>
+            </Topology>
+            <Geometry GeometryType="XY">
+                <DataItem Dimensions="91     2"
+                NumberType="Float" Precision="8" Format="HDF">
+                    rod_0470.h5:/Lagrangian/rod/Grid
+                </DataItem>
+            </Geometry>
+
+            <Attribute Name="scalar_3d" Active="1"
+            AttributeType="Scalar" Center="Node">
+                <DataItem Dimensions="91" NumberType="Float"
+                Precision="8" Format="HDF">
+                    rod_0470.h5:/Lagrangian/rod/Scalar/scalar_3d
+                </DataItem>
+            </Attribute>
+
+                
+        </Grid>
+    </Domain>
+</Xdmf>

@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf xmlns:xi="http://www.w3.org/2003/XInclude" Version="2.2">
+    <Domain>
+        <Grid GridType="Uniform">
+            <Time Value="0.6695958210697445"/>
+            <Topology TopologyType="3DCORECTMesh" Dimensions="  1    102    512"/>
+            <Geometry GeometryType="ORIGIN_DXDYDZ">
+                <DataItem Name="Origin" Dimensions="2"
+                NumberType="Float" Precision="16" Format="XML">
+                    0.              0.0068359375    0.0068359375
+                </DataItem>
+                <DataItem Name="Spacing" Dimensions="2"
+                NumberType="Float" Precision="16" Format="XML">
+                    0.             0.013671875    0.013671875
+                </DataItem>
+            </Geometry>
+
+            <Attribute Name="vorticity" Active="1"
+                AttributeType="Scalar" Center="Node">
+                    <DataItem Dimensions="  1    102    512"
+                    NumberType="Float" Precision="16" Format="HDF">
+                        sopht_0066.h5:/Eulerian/Scalar/vorticity
+                    </DataItem>
+                </Attribute>
+
+                <Attribute Name="velocity_0"
+                    Active="1" AttributeType="Scalar" Center="Node">
+                    <DataItem Dimensions="  1    102    512" NumberType="Float"
+                    Precision="16" Format="HDF">
+                        sopht_0066.h5:/Eulerian/Vector/velocity_0
+                    </DataItem>
+                </Attribute>
+
+                <Attribute Name="velocity_1"
+                    Active="1" AttributeType="Scalar" Center="Node">
+                    <DataItem Dimensions="  1    102    512" NumberType="Float"
+                    Precision="16" Format="HDF">
+                        sopht_0066.h5:/Eulerian/Vector/velocity_1
+                    </DataItem>
+                </Attribute>
+
+                
+        </Grid>
+    </Domain>
+</Xdmf>
